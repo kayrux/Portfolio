@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="title">
+    {{config.title}}
+  </div>
+  <div class="carousel">
+    <div class="arrow-key" (click)="leftArrowClick()">Prev</div>
+    <div class="carousel-content">
+      <ng-container *ngIf="displayedItem">
+        <div class="image-container">
+          <img [src]="displayedItem.imageSrc">
+        </div>
+        <div class="description">
+          {{displayedItem.description}}
+        </div>
+      </ng-container>
+    </div>
+    <div class="arrow-key" (click)="rightArrowClick()">Next</div>
+  </div>
+</div>

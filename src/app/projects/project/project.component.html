@@ -1,0 +1,16 @@
+<app-banner [title]="project.title"></app-banner>
+<div class="projects-container">
+  <ng-container *ngFor="let item of project.displayCards">
+    <ng-container [ngSwitch]="item.type">
+      <ng-template ngSwitchCase="carousel">
+        <app-carousel-card [config]="item.config"></app-carousel-card>
+      </ng-template>
+      <ng-template ngSwitchCase="text">
+        <app-text-card [config]="item.config"></app-text-card>
+      </ng-template>
+      <ng-template ngSwitchCase="video">
+        <app-video-card [config]="item.config"></app-video-card>
+      </ng-template>
+    </ng-container>
+  </ng-container>
+</div>

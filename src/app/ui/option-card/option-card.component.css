@@ -1,0 +1,65 @@
+.option-card {
+  width: 15rem;
+  height: 5rem;
+
+  padding: 1rem;
+  border-radius: 8px;
+  --border-color:rgb(203 203 203) ;
+  border: 2px solid var(--border-color);
+  box-shadow: 2px 3px 6px -2px var(--border-color);
+}
+
+.option-card:hover {
+  background-color: rgb(231, 231, 231, 0.3);
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(108, 107, 107);
+}
+
+.multiple-choice-option {
+  width: 10rem;
+  height: 3rem;
+}
+
+.mini {
+  .title {
+    font-size: 15px !important;
+    margin-bottom: 0px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+  width: 6rem;
+}
+.small {
+  width: 10rem;
+  height: 5rem; 
+}
+
+.medium {
+  width: 21rem;
+  height: 7rem; 
+}
+
+.large {
+  width: 30rem;
+  height: 10rem; 
+}
+
+.selected {
+  transition-duration: 0.15s;
+  box-shadow: 0 0 10px 0 var(--primary);
+  transform: scale(1.05);
+  border-color: var(--primary);
+}

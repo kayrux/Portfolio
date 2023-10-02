@@ -1,0 +1,14 @@
+<app-banner title="Projects" backgroundColour="red"></app-banner>
+<div class="projects">
+  <ng-container *ngFor="let project of projects; let i = index">
+    <div class="project-container" (click)="linkToProject(i)">
+      <img class="project-image" [src]="project.imageSrc" />
+      <div class="project-right-container">
+        <div class="project-title">{{project.title}}</div>
+        <div class="project-description">
+          {{project.description}}
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
