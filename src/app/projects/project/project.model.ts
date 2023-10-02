@@ -1,4 +1,5 @@
 import { CarouselConfig } from 'src/app/ui/carousel-card/carousel.model';
+import { VideoCardConfig } from 'src/app/ui/carousel-card/video-card/video.model';
 import { TextCardConfig } from 'src/app/ui/text-card/text-card.model';
 
 export interface ProjectJSON {
@@ -18,4 +19,7 @@ export interface DisplayCard {
 }
 
 export type DisplayCardType = 'carousel' | 'text' | 'video';
-export type DisplayTypeConfig = CarouselConfig | TextCardConfig;
+export type DisplayTypeConfig =
+  | CarouselConfig
+  | TextCardConfig
+  | VideoCardConfig;
