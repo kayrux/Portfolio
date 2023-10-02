@@ -9,16 +9,15 @@ import { ProjectsService } from '../projects.service';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent {
-  // projects = (projectsJSON as ProjectJSON).projects;
-  public projects: Project[] = [];
+  projects = (projectsJSON as ProjectJSON).projects;
+  // public projects: Project[] = [];
   public project!: Project;
   constructor(public projectsService: ProjectsService) {}
   ngOnInit() {
-    this.projects = this.projectsService.projects;
+    // this.projects = this.projectsService.projects;
     const id: number = Number(
-      location.pathname.substring(location.pathname.indexOf('/', 1) + 1)
+      location.pathname.substring(location.pathname.indexOf('projects/') + 9)
     );
-
     this.project = this.projects[id];
   }
 }
