@@ -1,6 +1,6 @@
 import { Router, RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
-import projectsJSON from '../../schemas/projects.json';
+import projectsJSON from '../../../assets/schema/projects.json';
 import { ProjectJSON } from '../project/project.model';
 
 @Component({
