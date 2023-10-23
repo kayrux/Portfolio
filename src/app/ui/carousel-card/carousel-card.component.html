@@ -3,7 +3,9 @@
     {{config.title}}
   </div>
   <div class="carousel">
-    <div class="arrow-key" (click)="leftArrowClick()">Prev</div>
+    <div class="arrow-key" (click)="leftArrowClick()" [style.opacity]="disableLeftArrowKey ? '0' : '1'">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </div>
     <div class="carousel-content">
       <ng-container *ngIf="displayedItem">
         <div class="image-container">
@@ -14,6 +16,7 @@
         </div>
       </ng-container>
     </div>
-    <div class="arrow-key" (click)="rightArrowClick()">Next</div>
+    <div class="arrow-key" (click)="rightArrowClick()" [style.opacity]="disableRightArrowKey ? '0' : '1'">
+      <mat-icon>arrow_forward_ios</mat-icon></div>
   </div>
 </div>

@@ -1,7 +1,8 @@
 import { Router, RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
-import projectsJSON from '../../schemas/projects.json';
-import { ProjectJSON } from '../project/project.model';
+import projectsJSON from '../../../assets/schema/projects.json';
+import { Project, ProjectJSON } from '../project/project.model';
+import { ProjectsService } from '../projects.service';
 
 @Component({
   selector: 'app-projects-page',
@@ -10,7 +11,15 @@ import { ProjectJSON } from '../project/project.model';
 })
 export class ProjectsPageComponent {
   projects = (projectsJSON as ProjectJSON).projects;
-  constructor(private router: Router) {}
+  // public projects: Project[] = [];
+  constructor(
+    private router: Router,
+    public projectsService: ProjectsService
+  ) {}
+
+  ngOnInit() {
+    // this.projects = this.projectsService.projects;
+  }
   linkToProject(id: number) {
     this.router.navigateByUrl(`/projects/${id}`);
   }

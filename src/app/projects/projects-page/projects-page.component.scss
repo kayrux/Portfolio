@@ -1,5 +1,7 @@
 .projects {
   display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
   flex-wrap: wrap;
   padding: 1rem;
   justify-content: center;
@@ -7,6 +9,7 @@
 
 .project-container {
   width: 90%;
+  margin: auto;
   height: 350px;
   background-color: white;
   border-radius: 8px;
@@ -22,8 +25,10 @@
 }
 
 .project-image {
-  height: 350px;
-  width: 550px;
+  max-height: 350px;
+  max-width: 550px;
+  width: auto;
+  height: auto;
   border-radius: 8px 0 0 8px;
 }
 
