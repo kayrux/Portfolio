@@ -19,10 +19,10 @@ export class ProjectComponent {
   ) {}
   ngOnInit() {
     // this.projects = this.projectsService.projects;
-    console.log(location.pathname);
-    console.log(this.router.url);
+    console.log('location', location.pathname);
+    console.log('router', this.router.url);
     const id: number = Number(
-      location.pathname.substring(location.pathname.indexOf('projects/') + 9)
+      this.router.url.substring(this.router.url.indexOf('projects/') + 9)
     );
     this.project = this.projects[id];
     console.log(id);
