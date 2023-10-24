@@ -19,5 +19,6 @@ export class ProjectComponent {
       location.pathname.substring(location.pathname.indexOf('projects/') + 9)
     );
     this.project = this.projects[id];
+    console.log(id);
   }
 }

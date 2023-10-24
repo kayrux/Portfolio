@@ -26,7 +26,8 @@ import { VideoCardComponent } from './ui/carousel-card/video-card/video-card.com
     CarouselCardComponent,
     TextCardComponent,
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [],
+  // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
