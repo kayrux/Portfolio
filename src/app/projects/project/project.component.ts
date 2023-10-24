@@ -11,20 +11,15 @@ import { Router } from '@angular/router';
 })
 export class ProjectComponent {
   projects = (projectsJSON as ProjectJSON).projects;
-  // public projects: Project[] = [];
   public project!: Project;
   constructor(
     public projectsService: ProjectsService,
     private router: Router
   ) {}
   ngOnInit() {
-    // this.projects = this.projectsService.projects;
-    console.log('location', location.pathname);
-    console.log('router', this.router.url);
     const id: number = Number(
       this.router.url.substring(this.router.url.indexOf('projects/') + 9)
     );
     this.project = this.projects[id];
-    console.log(id);
   }
 }

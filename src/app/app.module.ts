@@ -11,7 +11,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BannerComponent } from './shared/ui/banner/banner.component';
 import { CarouselCardComponent } from './ui/carousel-card/carousel-card.component';
 import { TextCardComponent } from './ui/text-card/text-card.component';
-import { VideoCardComponent } from './ui/carousel-card/video-card/video-card.component';
 
 @NgModule({
   declarations: [AppComponent, HomePageComponent],
@@ -27,7 +26,6 @@ import { VideoCardComponent } from './ui/carousel-card/video-card/video-card.com
     TextCardComponent,
   ],
   providers: [],
-  // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
