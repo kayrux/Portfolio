@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import projectsJSON from '../../../assets/schema/projects.json';
 import { Project, ProjectJSON } from './project.model';
 import { ProjectsService } from '../projects.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -12,9 +13,14 @@ export class ProjectComponent {
   projects = (projectsJSON as ProjectJSON).projects;
   // public projects: Project[] = [];
   public project!: Project;
-  constructor(public projectsService: ProjectsService) {}
+  constructor(
+    public projectsService: ProjectsService,
+    private router: Router
+  ) {}
   ngOnInit() {
     // this.projects = this.projectsService.projects;
+    console.log(location.pathname);
+    console.log(this.router.url);
     const id: number = Number(
       location.pathname.substring(location.pathname.indexOf('projects/') + 9)
     );
