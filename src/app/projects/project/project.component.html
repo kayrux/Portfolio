@@ -1,4 +1,5 @@
-<app-banner [title]="project.title"></app-banner>
+<app-banner [title]="project.title"
+  [backgroundColour]="project.bannerBackgroundColour ? project.bannerBackgroundColour : 'purple'"></app-banner>
 <div class="projects-container">
   <ng-container *ngFor="let item of project.displayCards">
     <ng-container [ngSwitch]="item.type">

@@ -3,6 +3,7 @@
     {
       "title": "StoryBot Adventures",
       "id": "storybot",
+      "bannerBackgroundColour": "sand",
       "description": "StoryBot Adventures is designed to help kids develop their artistic talent, improve their visualization skills, and encourage their creativity like never before. They not only read but also become the storytellers, guiding the narrative in their own unique way",
       "imageSrc": "assets/projects/storybot/front-page.png",
       "displayCards": [
@@ -156,6 +157,7 @@
     {
       "title": "Fish and Ships Lock",
       "id": "fish-and-ships",
+      "bannerBackgroundColour": "light-blue",
       "description": "The Fish-and-Ships lock introduces an innovative approach to phone security. Set against a serene ocean backdrop in a soothing shade of blue, users must steer a boat to catch designated fish to unlock their device.",
       "imageSrc": "assets/projects/fish-and-ships-lock/lock-screen.jpg",
       "displayCards": [
