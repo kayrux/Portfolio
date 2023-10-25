@@ -7,6 +7,7 @@ export interface ProjectJSON {
 }
 export interface Project {
   title: string;
+  bannerBackgroundColour?: string;
   id: string;
   description: string;
   imageSrc: string;
