@@ -478,7 +478,7 @@
         {
           "type": "video",
           "config": {
-            "title": "Demo",
+            "title": "Final demo",
             "src": "https://www.youtube.com/embed/nJIYapTestc"
           }
         },
@@ -542,6 +542,13 @@
           "config": {
             "title": "Idea Selection",
             "innerHtml": "Following thorough deliberation, we opted to proceed with our first idea. While this concept isn't entirely novel, as there has been some prior work in this area, existing solutions lack sufficient interactivity and practicality. This gap presents us with ample opportunities for innovation and enhancement."
+          }
+        },
+        {
+          "type": "video",
+          "config": {
+            "title": "Concept video",
+            "src": "https://www.youtube.com/embed/wo5_qvfUgU0"
           }
         },
         {
