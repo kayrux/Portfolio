@@ -3,6 +3,7 @@
     {
       "title": "StoryBot Adventures",
       "id": "storybot",
+      "bannerBackgroundColour": "sand",
       "description": "StoryBot Adventures is designed to help kids develop their artistic talent, improve their visualization skills, and encourage their creativity like never before. They not only read but also become the storytellers, guiding the narrative in their own unique way",
       "imageSrc": "assets/projects/storybot/front-page.png",
       "displayCards": [
@@ -156,6 +157,7 @@
     {
       "title": "Fish and Ships Lock",
       "id": "fish-and-ships",
+      "bannerBackgroundColour": "light-blue",
       "description": "The Fish-and-Ships lock introduces an innovative approach to phone security. Set against a serene ocean backdrop in a soothing shade of blue, users must steer a boat to catch designated fish to unlock their device.",
       "imageSrc": "assets/projects/fish-and-ships-lock/lock-screen.jpg",
       "displayCards": [
@@ -455,6 +457,160 @@
           "config": {
             "title": "Contribution",
             "innerHtml": "I worked on the logic, moving animations, and user-friendly design of the website."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Hydrobot",
+      "id": "hydrobot",
+      "bannerBackgroundColour": "light-blue",
+      "description": "A charming and friendly robot designed to encourage hydration.",
+      "imageSrc": "assets/projects/hydrobot/hydrobot.png",
+      "displayCards": [
+        {
+          "type": "text",
+          "config": {
+            "title": "Description",
+            "innerHtml": "Hydrobot is a charming and friendly robot designed to encourage hydration. Each day at a set time, it rolls towards you, bearing a cup. Notable for the light on its top, Hydrobot also makes a unique sound as a hydration reminder. Its wheels are crafted from Toio, a Sony-developed system that combines robotics with interactive play, making Hydrobot's movements smooth and precise. The robot's inner workings are built from Arduino components, known for their versatility in electronics projects, while its exterior is fashioned from cartons, lending a creative and eco-friendly aspect to its design.<br /><br />Source code (for arduino): <a href='https://github.com/thao3005/HydroBot/tree/main'>Github</a>"
+          }
+        },
+        {
+          "type": "video",
+          "config": {
+            "title": "Demo",
+            "src": "https://www.youtube.com/embed/nJIYapTestc"
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Concept Sketches",
+            "innerHtml": "In our quest to address daily challenges, we brainstormed various ideas. Below are ten of these concepts. Our aim was to create a system that is not only interactive and intelligent but also practical and applicable in everyday life."
+          }
+        },
+        {
+          "type": "carousel",
+          "config": {
+            "title": "10 Concept Sketches",
+            "items": [
+              {
+                "imageSrc": "assets/projects/hydrobot/p1.png",
+                "description": "A machine to automatically dispense one cup of water six times a day. It has signaling mechanisms to prompt you to drink the water it provides."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p2.png",
+                "description": "Smart locker with embedded AI."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p3.png",
+                "description": "Smart calculator that can solve complicated math problems."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p4.png",
+                "description": "Smart alarm."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p5.png",
+                "description": "Weather forecast system."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p6.png",
+                "description": "A system to detect unknown objects using radar waves."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p7.png",
+                "description": "Fingerprint authenticator."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p8.png",
+                "description": "Music LED light controller."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p9.png",
+                "description": "Automatically feeding fish system."
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/p10.png",
+                "description": "Automatic street light."
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Idea Selection",
+            "innerHtml": "Following thorough deliberation, we opted to proceed with our first idea. While this concept isn't entirely novel, as there has been some prior work in this area, existing solutions lack sufficient interactivity and practicality. This gap presents us with ample opportunities for innovation and enhancement."
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Detailed Sketches",
+            "innerHtml": "After finalizing our main idea, we delved into creating detailed sketches, categorizing them into three main functionalities: a water dispenser, a water bottle, and a water-drinking reminder system. Initially, we focused on the water dispenser but soon realized that fully developing its novel functions would be time-consuming. Additionally, we recognized its lack of flexibility due to its fixed location, which isn't practical as people often move around throughout the day. We then considered the water bottle concept but faced challenges in design, particularly in integrating Arduino components within the bottle's structure. Consequently, we decided to pursue the drinking water reminder robot, seeing it as the most feasible and innovative option."
+          }
+        },
+        {
+          "type": "carousel",
+          "config": {
+            "title": "10 Detailed Sketches",
+            "items": [
+              {
+                "imageSrc": "assets/projects/hydrobot/d1.png",
+                "description": "Digital screen to show the facial expression of the robot"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d2.png",
+                "description": "Wheels for movements"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d3.png",
+                "description": "Camera to detect obstacles and navigate"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d4.png",
+                "description": "Sensors to detect if the cup is on"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d5.png",
+                "description": "LED to indicate the status of the robot"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d6.png",
+                "description": "Speaker for notification"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d7.png",
+                "description": "Bar indicating how much water has been drunk"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d8.png",
+                "description": "Water bottles divided into compartments by the divider"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d9.png",
+                "description": "Automatically refill the cup with water"
+              },
+              {
+                "imageSrc": "assets/projects/hydrobot/d10.png",
+                "description": "A scale to detect the weight of the cup to check if it’s placed on the robot"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Detailed Sketches Idea Selection",
+            "innerHtml": "Proceeding with the drinking water reminder robot, we carefully selected its features to ensure both functionality and user-friendly interaction. These include wheels for mobility, sensors to detect the presence of a cup, an LED to show the robot's status, and a speaker for auditory notifications. These elements are designed to enable the robot to efficiently fulfill its task and facilitate seamless interaction with the user."
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Contribution",
+            "innerHtml": "I programmed the arduino and assisted in wiring up all the parts."
           }
         }
       ]
