@@ -621,6 +621,196 @@
           }
         }
       ]
+    },
+    {
+      "title": "Virtual Office",
+      "id": "hydrobot",
+      "bannerBackgroundColour": "light-blue",
+      "description": "A simulation of an office space designed to connect fellow coworkers and create a collaborative environment.",
+      "imageSrc": "assets/projects/virtual-office/front-page.png",
+      "displayCards": [
+        {
+          "type": "text",
+          "config": {
+            "title": "Description",
+            "innerHtml": " In an increasingly digital world, our virtual office opens up a new way of working. It is a digital space that simulates the office environment, aiming to break the limitations of physical distance and make remote work more collaborative. The virtual office allows team members to work closely together, as if they were in person. <br /><br />Source code: <a href='https://github.com/kayrux/virtual-office'>Github</a>"
+          }
+        },
+
+        {
+          "type": "text",
+          "config": {
+            "title": "Concept Sketches",
+            "innerHtml": "We brainstormed various ideas as we sought solutions to everyday remote communication and collaboration. Here are ten of those concepts. Our goal was to create a system that was not only more interactive but also practical and suitable for everyday life and work."
+          }
+        },
+        {
+          "type": "carousel",
+          "config": {
+            "title": "10 Concept Sketches",
+            "items": [
+              {
+                "imageSrc": "assets/projects/virtual-office/p1.png",
+                "description": "Virtual meeting room/ classrooms. Have vr avatars that sit in chairs and look at board instead of zoom calls to make more interactive."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p2.png",
+                "description": "VR networking business cards. At networking events/sharing business card/resume can be very boring more fun and fast way by having scannable vr profiles can look at while talking to person perhaps relevant information ex) looking for a programmer will be highlighted."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p3.png",
+                "description": "A remote-controlled home monitoring robot equipped with a camera that mimics your head movements, allowing you to navigate and visually inspect your home from anywhere using either physical movements or a mouse."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p4.png",
+                "description": "Group chat system, you can invite people (such as your family) into the group chat and share information with them."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p5.png",
+                "description": "A video call system equipped with eye-tracking technology that displays where each participant is looking on the screen, enabling the monitoring of attendee attention during meetings or classes. "
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p6.png",
+                "description": "The virtual office has the same functions as a real office. You can control the characters in the virtual office to communicate and communicate with other people."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p7.png",
+                "description": "Simulate real-life scenarios, you can control the character's direction and talk to other people."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p8.png",
+                "description": "Source file terminal, files can be projected to terminals around the world and read and modified."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p9.png",
+                "description": "Terminal for reading files, files can be projected to terminals around the world and read and modified."
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/p10.png",
+                "description": "All team members work on the same document and share their ideas in real time."
+              }
+            ]
+          }
+        },
+
+        {
+          "type": "text",
+          "config": {
+            "title": "Idea Selection",
+            "innerHtml": "After careful consideration, we chose Virtual Office. We think this concept is novel because a Virtual Office can simulate all scenarios in the office, reduce communication costs, enhance the efficiency of remote communication and collaboration, and make remote work more efficient and humane."
+          }
+        },
+        {
+          "type": "carousel",
+          "config": {
+            "title": "Rotoscope Sketches",
+            "items": [
+              {
+                "imageSrc": "assets/projects/virtual-office/r1.png",
+                "description": ""
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/r2.png",
+                "description": ""
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/r3.png",
+                "description": "."
+              }
+            ]
+          }
+        },
+        {
+          "type": "video",
+          "config": {
+            "title": "Concept video",
+            "src": "https://www.youtube.com/embed/DTAwcMM8OYQ"
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Detailed Sketches",
+            "innerHtml": "After deciding on the main idea, we dug into detailed sketches, dividing them into four main parts: the main interface, a group chat room, a one-to-one chat room, and an area that displays the number of people online. Our virtual office software simulates all scenarios in the office, so users can communicate with colleagues remotely and learn about events in the office for the first time, which greatly reduces communication costs in the office and enhances remote communication and collaboration."
+          }
+        },
+        {
+          "type": "carousel",
+          "config": {
+            "title": "10 Detailed Sketches",
+            "items": [
+              {
+                "imageSrc": "assets/projects/virtual-office/d1.png",
+                "description": "The area displays the number of people online in the Office"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d2.png",
+                "description": "Chat with others"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d3.png",
+                "description": "View the status of your colleagues"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d4.png",
+                "description": "Character status to display whether you are busy"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d5.png",
+                "description": "View the current time"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d6.png",
+                "description": "Notifications for all users that can be triggered by the administer (Boss)"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d7.png",
+                "description": "Clock in and clock out of work"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d8.png",
+                "description": "One-to-one chat interface (you can have a one-to-one conversation with any online colleague)"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d9.png",
+                "description": "Group chat interface (you can have a conversation with all online colleagues)"
+              },
+              {
+                "imageSrc": "assets/projects/virtual-office/d10.png",
+                "description": "The main interface of the virtual office, you can control the role you play to move around and talk to other colleagues"
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Detailed Sketches Idea Selection",
+            "innerHtml": "Starting with the design of the virtual office, we carefully selected its features to ensure functionality and efficient interaction. These include a main interface simulating an office scene, a group chat room for project discussions, brainstorming, daily communication, or a one-on-one chat room for more private and focused conversations. These elements are designed to enable virtual offices to effectively enhance the efficiency of remote communication and collaboration. This allows team members to work together as closely as if they were in the same office, even in different locations, and jointly promote the progress of the project."
+          }
+        },
+        {
+          "type": "video",
+          "config": {
+            "title": "Final demo",
+            "src": "https://www.youtube.com/embed/aBFW85r5K8M"
+          }
+        },
+        {
+          "type": "video",
+          "config": {
+            "title": "Final Presentation (Sketches, Concept Video, and Final Demo combined)",
+            "src": "https://www.youtube.com/embed/75UNt1imQkA"
+          }
+        },
+        {
+          "type": "text",
+          "config": {
+            "title": "Contribution",
+            "innerHtml": "I modified the game code to suit our project, and connected the game to the chats. I also redesigned a small portion of the art."
+          }
+        }
+      ]
     }
   ]
 }
