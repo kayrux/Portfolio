@@ -633,7 +633,7 @@
           "type": "text",
           "config": {
             "title": "Description",
-            "innerHtml": " In an increasingly digital world, our virtual office opens up a new way of working. It is a digital space that simulates the office environment, aiming to break the limitations of physical distance and make remote work more collaborative. The virtual office allows team members to work closely together, as if they were in person. <br /><br />Source code: <a href='https://github.com/kayrux/virtual-office'>Github</a>"
+            "innerHtml": " In an increasingly digital world, our virtual office opens up a new way of working. It is a digital space that simulates the office environment, aiming to break the limitations of physical distance and make remote work more collaborative. The virtual office allows team members to work closely together, as if they were in person. <br /><br />Source code: <a href='https://github.com/kayrux/virtual-office'>Github</a><br />Website link: <a href='https://kayrux.github.io/virtual-office/'>Virtual Office</a>"
           }
         },
 
