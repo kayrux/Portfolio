@@ -1,16 +1,19 @@
 <app-banner [title]="project.title"
   [backgroundColour]="project.bannerBackgroundColour ? project.bannerBackgroundColour : 'purple'"></app-banner>
 <div class="projects-container">
-  <ng-container *ngFor="let item of project.displayCards">
+  <ng-container *ngFor="let item of project.displayCardsConfig">
     <ng-container [ngSwitch]="item.type">
-      <ng-template ngSwitchCase="carousel">
-        <app-carousel-card [config]="item.config"></app-carousel-card>
+      <ng-template [ngSwitchCase]="DisplayCardType.carousel">
+        <app-carousel-card [config]="item"></app-carousel-card>
       </ng-template>
-      <ng-template ngSwitchCase="text">
-        <app-text-card [config]="item.config"></app-text-card>
+      <ng-template [ngSwitchCase]="DisplayCardType.text">
+        <app-text-card [config]="item"></app-text-card>
       </ng-template>
-      <ng-template ngSwitchCase="video">
-        <app-video-card [config]="item.config"></app-video-card>
+      <ng-template [ngSwitchCase]="DisplayCardType.video">
+        <app-video-card [config]="item"></app-video-card>
+      </ng-template>
+      <ng-template [ngSwitchCase]="DisplayCardType.embeddedWebsite">
+        <app-embed-website [config]="item"></app-embed-website>
       </ng-template>
     </ng-container>
   </ng-container>

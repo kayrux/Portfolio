@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import projectsJSON from '../../../assets/schema/projects.json';
-import { Project, ProjectJSON } from './project.model';
+import { Project, projects, DisplayCardType } from './project.model';
 import { ProjectsService } from '../projects.service';
 import { Router } from '@angular/router';
 
@@ -10,8 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent {
-  projects = (projectsJSON as ProjectJSON).projects;
+  projects = projects;
   public project!: Project;
+  DisplayCardType = DisplayCardType;
+
   constructor(
     public projectsService: ProjectsService,
     private router: Router
@@ -21,5 +22,6 @@ export class ProjectComponent {
       this.router.url.substring(this.router.url.indexOf('projects/') + 9)
     );
     this.project = this.projects[id];
+    console.log('project: ', this.project);
   }
 }
