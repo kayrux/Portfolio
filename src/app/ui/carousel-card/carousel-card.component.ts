@@ -1,7 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { CarouselConfig, CarouselItem } from './carousel.model';
 import { CommonModule } from '@angular/common';
 import { SharedAngularMaterialModule } from 'src/app/shared/shared-modules/shared-angular-material.module';
+import {
+  CarouselConfig,
+  CarouselItem,
+  DisplayCardConfig,
+  DisplayCardType,
+} from 'src/app/projects/project/project.model';
 
 @Component({
   selector: 'app-carousel-card',
@@ -11,7 +16,8 @@ import { SharedAngularMaterialModule } from 'src/app/shared/shared-modules/share
   imports: [CommonModule, SharedAngularMaterialModule],
 })
 export class CarouselCardComponent {
-  @Input() config!: CarouselConfig;
+  @Input() config!: DisplayCardConfig;
+  public carouselConfig!: CarouselConfig;
 
   public selectedIndex = 0;
   public displayedItem!: CarouselItem;
@@ -19,17 +25,18 @@ export class CarouselCardComponent {
   public disableRightArrowKey = false;
 
   ngOnInit() {
-    this.displayedItem = this.config.items![0];
+    this.carouselConfig = this.config as CarouselConfig;
+    this.displayedItem = this.carouselConfig.items![0];
   }
 
   updateDisplayItem() {
-    this.displayedItem = this.config.items![this.selectedIndex];
+    this.displayedItem = this.carouselConfig.items![this.selectedIndex];
   }
 
   rightArrowClick() {
-    if (this.selectedIndex < this.config.items!.length - 1) {
+    if (this.selectedIndex < this.carouselConfig.items!.length - 1) {
       this.selectedIndex++;
-      if (this.selectedIndex === this.config.items!.length - 1) {
+      if (this.selectedIndex === this.carouselConfig.items!.length - 1) {
         this.disableRightArrowKey = true;
       }
     }

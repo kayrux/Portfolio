@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { TextCardConfig } from './text-card.model';
+import {
+  DisplayCardConfig,
+  TextCardConfig,
+} from 'src/app/projects/project/project.model';
 
 @Component({
   selector: 'app-text-card',
@@ -10,5 +13,11 @@ import { TextCardConfig } from './text-card.model';
   imports: [CommonModule],
 })
 export class TextCardComponent {
-  @Input() config!: TextCardConfig;
+  @Input() config!: DisplayCardConfig;
+  public textCardConfig!: TextCardConfig;
+
+  ngOnInit() {
+    this.textCardConfig = this.config as TextCardConfig;
+    console.log('text card config: ' + this.textCardConfig);
+  }
 }

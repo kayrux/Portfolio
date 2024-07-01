@@ -6,6 +6,7 @@ import { ProjectComponent } from './project/project.component';
 import { CarouselCardComponent } from '../ui/carousel-card/carousel-card.component';
 import { TextCardComponent } from '../ui/text-card/text-card.component';
 import { VideoCardComponent } from '../ui/carousel-card/video-card/video-card.component';
+import { EmbedWebsiteComponent } from '../ui/embed-website/embed-website.component';
 
 @NgModule({
   declarations: [ProjectsPageComponent, ProjectComponent],
@@ -15,6 +16,7 @@ import { VideoCardComponent } from '../ui/carousel-card/video-card/video-card.co
     CarouselCardComponent,
     TextCardComponent,
     VideoCardComponent,
+    EmbedWebsiteComponent,
   ],
 })
 export class ProjectsModule {}
