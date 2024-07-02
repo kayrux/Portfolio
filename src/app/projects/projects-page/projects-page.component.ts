@@ -1,7 +1,7 @@
 import { Router, RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
-import { projects } from '../project/project.model';
 import { ProjectsService } from '../projects.service';
+import { projects } from 'src/app/schemas/projects';
 
 @Component({
   selector: 'app-projects-page',
