@@ -1,19 +1,16 @@
-<div class="nav-bar">
-  <div class="left-nav"></div>
-  <div class="middle-nav">
-    <div class="title" routerLink="/">Surya Kusjanto</div>
+<div id="body">
+  <div class="nav-bar">
+    <div class="left-nav"></div>
+    <div class="middle-nav">
+      <div class="title" routerLink="/">Surya Kusjanto</div>
+    </div>
+    <div class="right-nav">
+      <button class="nav-btn" routerLink="/projects">
+        Projects
+      </button>
+    </div>
   </div>
-  <div class="right-nav">
-    <!-- <button class="nav-btn" routerLink="/home">hello</button> -->
-    <!-- <button class="nav-btn" routerLink="/">
-      Home
-    </button> -->
-    <button class="nav-btn" routerLink="/projects">
-      Projects
-    </button>
+  <div class="content">
+    <router-outlet></router-outlet>
   </div>
-</div>
-<div class="content">
-  <router-outlet></router-outlet>
-
 </div>

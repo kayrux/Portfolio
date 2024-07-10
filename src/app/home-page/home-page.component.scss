@@ -27,3 +27,74 @@
   line-height: 30px;
   align-self: center;
 }
+
+// Parallex
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-200px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.angular-logo {
+  width: 200px;
+}
+
+.img {
+  mix-blend-mode: multiply;
+}
+
+.sliding-image-container {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+@for $i from 1 to 10 {
+  .img:nth-child(#{$i}) {
+    transition-delay: 200ms * $i;
+  }
+}
+// .section.show {
+//   background-color: aquamarine;
+// }
+
+// .sliding-image-container > * {
+//   opacity: 0;
+//   transform: translateY(20px);
+//   animation: slideIn 1s forwards;
+// }
+
+// @for $i from 1 through 4 {
+//   .sliding-image-container > *:nth-child(#{$i}) {
+//     animation-delay: $i * 0.1s;
+//   }
+// }
+
+// @keyframes slideIn {
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }

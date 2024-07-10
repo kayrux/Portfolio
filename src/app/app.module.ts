@@ -11,9 +11,11 @@ import { BannerComponent } from './shared/ui/banner/banner.component';
 import { CarouselCardComponent } from './ui/carousel-card/carousel-card.component';
 import { TextCardComponent } from './ui/text-card/text-card.component';
 import { SafePipe } from './shared/pipes/safe-pipe';
+import { IntersectionObserverDirective } from './shared/directives/intersection-observer.directive';
+import { SlidingImageCarouselComponent } from './shared/ui/sliding-image-carousel/sliding-image-carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent],
+  declarations: [AppComponent, HomePageComponent, IntersectionObserverDirective, SlidingImageCarouselComponent],
   imports: [
     ProjectsModule,
     BrowserModule,
