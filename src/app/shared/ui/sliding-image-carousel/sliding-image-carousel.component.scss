@@ -1,0 +1,15 @@
+#image-track {
+  display: flex;
+  column-gap: 2vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(10%, -50%);
+  user-select: none;
+}
+
+#image-track > .image {
+  width: 36vmin;
+  height: 50vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}

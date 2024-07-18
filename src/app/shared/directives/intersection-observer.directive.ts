@@ -12,6 +12,7 @@ export interface IntersectionObserverValue {
 }
 
 @Directive({
+  standalone: true,
   selector: '[intersectionObserver]',
 })
 export class IntersectionObserverDirective implements OnDestroy {

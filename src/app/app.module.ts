@@ -6,18 +6,16 @@ import { SharedAngularMaterialModule } from './shared/shared-modules/shared-angu
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsModule } from './projects/projects.module';
 import { CommonModule } from '@angular/common';
-import { HomePageComponent } from './home-page/home-page.component';
 import { BannerComponent } from './shared/ui/banner/banner.component';
 import { CarouselCardComponent } from './ui/carousel-card/carousel-card.component';
 import { TextCardComponent } from './ui/text-card/text-card.component';
-import { SafePipe } from './shared/pipes/safe-pipe';
-import { IntersectionObserverDirective } from './shared/directives/intersection-observer.directive';
-import { SlidingImageCarouselComponent } from './shared/ui/sliding-image-carousel/sliding-image-carousel.component';
+import { HomePageModule } from './home-page/home-page.module';
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, IntersectionObserverDirective, SlidingImageCarouselComponent],
+  declarations: [AppComponent],
   imports: [
     ProjectsModule,
+    HomePageModule,
     BrowserModule,
     AppRoutingModule,
     SharedAngularMaterialModule,

@@ -1,1 +1,5 @@
-<p>sliding-image-carousel works!</p>
+<div id="image-track" #imageTrack>
+  <ng-container *ngFor="let url of imageUrls">
+    <img class="image" [src]="url" [draggable]="false" />
+  </ng-container>
+</div>
