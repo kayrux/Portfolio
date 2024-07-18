@@ -25,10 +25,10 @@ export class SlidingImageCarouselComponent implements AfterViewInit {
   @ViewChild('imageTrack', { static: false }) imageTrackRef!: ElementRef;
 
   @Input() imageUrls: string[] = [
-    '../../../../assets/images/wendell-1.jpg',
-    '../../../../assets/images/wendell-2.jpg',
-    '../../../../assets/images/wendell-3.jpg',
-    '../../../../assets/images/wendell-4.jpg',
+    'assets/images/wendell-1.jpg',
+    'assets/images/wendell-2.jpg',
+    'assets/images/wendell-3.jpg',
+    'assets/images/wendell-4.jpg',
   ];
 
   private mouseDownListener: any;
