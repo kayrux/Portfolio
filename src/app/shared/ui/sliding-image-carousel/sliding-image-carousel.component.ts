@@ -68,7 +68,7 @@ export class SlidingImageCarouselComponent implements AfterViewInit {
 
     this.imageTrackElement.animate(
       {
-        transform: `translate(${nextPercentage + 10}%, -50%)`,
+        transform: `translate(${nextPercentage + 10}%, 0%)`,
       },
       { duration: 1200, fill: 'forwards' }
     );
